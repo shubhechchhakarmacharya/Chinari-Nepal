@@ -1,0 +1,176 @@
+.download {
+    background-color: $primaryColor;
+    margin-top: 90px;
+    position: relative;
+
+    .container {
+        .row {
+            padding: 40px 20px;
+
+            .col-sm-8 {
+                .text {
+                    text-align: center;
+
+                    h2 {
+                        font-size: 32px;
+                        color: #fff;
+
+                        span {
+                            color: $orange;
+                        }
+                    }
+
+                    p {
+                        font-size: 18px;
+                        color: #fff;
+
+                        &::after {
+                            content: "";
+                            display: block;
+                            width: 55%;
+                            height: 1px;
+                            background-color: #fff;
+                            margin-left: 23%;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+
+                .image {
+                    place-content: center;
+
+                    img {
+                        width: 140px;
+                        margin-right: 30px;
+                    }
+                }
+            }
+
+            .col-sm-4 {
+                .col {
+                    position: absolute;
+                    bottom: -10%;
+
+                    .image {
+                        text-align: center;
+                        position: relative;
+
+                        img {
+                            width: 40%;
+                            animation-name: float;
+                            animation-duration: 3s;
+                            animation-iteration-count: infinite;
+                            animation-timing-function: ease-in-out;
+                            margin-left: 30px;
+                            margin-top: 5px;
+
+                            @keyframes float {
+                                0% {
+                                    transform: translate(10px, 0px) ;
+                                }
+                                65% {
+                                    transform: translate(-27px, 0px) ;
+                                }
+                                100% {
+                                    transform: translate(-5px, 0px) ;
+                                }
+                            }
+
+                            &::after {
+                                content: "";
+                                display: block;
+                                border: 1px solid #fff;
+                                background-color: #fff;
+                                width: 120px;
+                                height: 20px;
+                                padding: 110px;
+                                border-radius: 50%;
+                                position: absolute;
+                                top: 60%;
+                                margin-left: 57px;
+                            }
+                        }
+                    }
+
+                    &::before {
+                        content: "";
+                        display: block;
+                        border: 1px solid #fff;
+                        background-color: #fff;
+                        width: 120px;
+                        height: 20px;
+                        padding: 110px;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 60%;
+                        margin-left: 57px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .download {
+        .container {
+            .row {
+                .col-sm-8 {
+                    max-width: 100%;
+                    flex: 0 0 100%;
+                    .text {
+                        h2 {
+                            span {}
+                        }
+
+                        p {}
+                    }
+                }
+
+                .image {
+                    img {}
+                }
+            }
+
+            .col-sm-4 {
+                display: none;
+                .col {
+                    .image {
+                        img {
+                            width: 60px;
+                            margin-left: 90%;
+
+                            &::after {
+                                content: none;
+                                display: block;
+                                border: 1px solid #fff;
+                                background-color: #fff;
+                                width: 120px;
+                                height: 20px;
+                                padding: 110px;
+                                border-radius: 50%;
+                                position: absolute;
+                                top: 60%;
+                                margin-left: 57px;
+                            }
+                        }
+                    }
+
+                    &::before {
+                        content: none;
+                        display: block;
+                        border: 1px solid #fff;
+                        background-color: #fff;
+                        width: 120px;
+                        height: 20px;
+                        padding: 110px;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 60%;
+                        margin-left: 57px;
+                    }
+                }
+            }
+        }
+    }
+}

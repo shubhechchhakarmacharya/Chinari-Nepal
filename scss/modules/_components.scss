@@ -1,0 +1,19 @@
+img{
+    width: 100%;
+    height: auto;
+}
+p{
+    font-size: 14px;
+    color: $gray;
+}
+.title{
+    h2{
+        font-size: 32px;
+        color: $blue;
+        text-align: center;
+        font-weight: 700;
+        span{
+            color: $orange;
+        }
+    }
+}

@@ -1,0 +1,85 @@
+.main_service{
+    margin-top: 90px;
+    .container{
+        .title{
+            h2{
+                font-size: 32px;
+                color: $blue;
+                text-align: center;
+                font-weight: 700;
+                span{
+                    color: $orange;
+                }
+                &::after{
+                    content: "";
+                    display: block;
+                    width: 3%;
+                    height: 2px;
+                    background-color: $orange;
+                    transform: translate(0, -16px);
+                    margin-left: 32%;
+                }
+            }
+        }
+        .row{
+            .col-sm-4{
+                .mobile{
+                    margin: 0 25px;
+                    .image{
+                        margin-top: 50px;
+                        img{
+                            
+                        }
+                    }
+                    .text{
+                        h4{
+                            margin-top: 30px;
+                            font-size: 23px;
+                            font-weight: 500;
+                            color: $blue;
+                        }
+                        p{
+                            margin-top: 15pxpx;
+                            font-size: 14px;
+                            color: #22313f;
+                            line-height: 1.8;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:768px){
+    .main_service{
+        margin-top: 60px;
+        .container{
+            .title{
+                h2{
+                    span{
+                    }
+                    }
+                }
+            }
+            .row{
+                flex-direction: column;
+                .col-sm-4{
+                    max-width: 100%;
+                    .mobile{
+                        .image{
+                            img{         
+                            }
+                        }
+                        .text{
+                            h4{
+                            }
+                            p{
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
