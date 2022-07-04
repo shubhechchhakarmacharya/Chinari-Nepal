@@ -1,0 +1,168 @@
+.about {
+    position: relative;
+    margin-top: 0px;
+    background-color: #fafafa;
+
+    .image {
+        img {
+            width: 200px;
+        }
+    }
+
+    .container {
+        .row {
+            &:first-child{
+                margin-bottom: 90px;
+            }
+
+            .col-sm-6 {
+                h3 {
+                    font-size: 32px;
+                    color: #000;
+                    font-weight: 700;
+                    position: relative;
+
+                    span {
+                        color: $orange;
+                    }
+
+                    &::before {
+                        position: absolute;
+                        content: " ";
+                        display: block;
+                        height: 2px;
+                        width: 25px;
+                        background-color: #000;
+                        bottom: 0px;
+                    }
+
+                    &::after {
+                        content: " ";
+                        display: block;
+                        height: 2px;
+                        width: 80px;
+                        background-color: $orange;
+                        margin-left: 30px;
+                        margin-top: 20px;
+                    }
+                }
+
+                p {
+                    margin-top: 50px;
+                    margin-left: 5px;
+                    padding-right: 40px;
+                    color: $gray;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 1.8;
+                }
+
+                .slick-dots {
+                    position: absolute;
+                    bottom: 0px;
+                    right: 30px;
+                }
+
+                .slick-dots li {
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    margin: 0 5px;
+                    padding: 0px;
+                    cursor: pointer;
+                    background-color: rgb(255, 255, 255);
+                    border: 1px solid rgb(0, 0, 0);
+                    border-radius: 58px;
+                }
+
+                #slick-slide-control11 {
+                    display: none !important;
+                }
+
+                #slick-slide-control10 {
+                    display: none;
+                }
+               .tab-content{
+                .tab-pane {
+                    margin-top: 50px;
+                    margin-left: 5px;
+                    padding-right: 40px;
+                    color: $gray;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 1.8;
+
+                }
+               }
+
+                nav {
+                    margin-top: 20px;
+                    .nav{
+                        .nav-link {
+                            font-size: 20px;
+                            font-weight: 400;
+                            color: $gray;
+                            padding-bottom: 5px;
+                            border: none; 
+                            border-top-left-radius: 0;
+                            border-top-right-radius: 0;
+                            text-decoration: none;
+                                border-bottom: 2px solid transparent;
+                            &:last-child {
+                                margin-left: 20px;
+                            }
+    
+                            &:hover {
+                                text-decoration: none;
+                                color: $primaryColor;
+                                border-bottom: 2px solid $primaryColor;
+                            }
+                        }
+                    }
+                }
+
+                .images {
+                    img {}
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .about {
+        .image {
+            img {}
+        }
+
+        .container {
+            .row {
+                flex-direction: column;
+
+                .col-sm-6 {
+                    max-width: 100%;
+
+                    .text {
+                        h2 {
+                            span {}
+                        }
+
+                        p {}
+
+                        h3 {
+                            span {}
+                        }
+                    }
+                    .tab-content{
+                        .tab-pane {
+                            margin-top: 20px;
+                        }
+                    }
+                    .images {
+                        img {}
+                    }
+                }
+            }
+        }
+    }
+}
