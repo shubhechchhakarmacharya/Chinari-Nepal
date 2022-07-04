@@ -2,7 +2,6 @@
 <?php include 'includes/header.php'; ?>
 
 
-<?php include("$page.php"); ?>
 <?php include 'includes/banner.php'; ?>
 <?php include 'includes/about.php'; ?>
 <?php include 'includes/main_features.php';?>
